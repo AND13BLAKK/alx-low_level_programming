@@ -1,18 +1,15 @@
 #include"main.h"
 
 /**
- * main - Entry Point
- *
- * Description: print_alphabet -executes  function to print alphabe in lowercas
- *
- * Return 0 (Success)
+ * print_alphabet - utilizes on the _putchar function to print
+ *                 the alphabet a - z
  */
 
-void print_alphabet (void)
+void print_alphabet(void)
 {
-int ch;
+	int ch;
 
-for(ch='a'; ch <='z'; ++ch)
-	_putchar(ch)
-		_putchar('\n')
+	for (ch = 'a'; ch <= 'z'; ++ch)
+		_putchar(ch);
+		_putchar('\n');
 }
