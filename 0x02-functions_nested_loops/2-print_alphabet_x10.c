@@ -1,21 +1,27 @@
-#include"main.h"
+#include "main.h"
 
-/*
- * main - Entry Point
- *
- * Description;  function that prints ten times the alphabet, in lowercase, followed by a new line.
- *
- * Always 0 (Success)
- */
-
-int  print_alphabet (void)
+/**
+ *  * print_alphabet_x10 - print alphabet
+ *   *
+ *    * Return: Always 0.
+ *     */
+void print_alphabet_x10(void)
 {
-int line, ch;
+	int alphabet;
+	int count;
 
-for(line = 0; line <=9; ++ch)
-{
-	for(ch = 'a'; ch <= 'z'; ++ch)
-		_putchar(ch);
-	_putchar('\n');
-}
+
+	count = 0;
+	while (count < 10)
+	{
+		for (alphabet = 'a' ; alphabet <= 'z'; alphabet++)
+		{
+			_putchar(alphabet);
+		}
+
+		count++;
+		_putchar('\n');
+	}
+
+
 }
