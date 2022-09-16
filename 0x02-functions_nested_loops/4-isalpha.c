@@ -1,17 +1,24 @@
-#include"main.h"
+#include "main.h"
 
-/*
- * main - Entry Point
+/**
+ * _isalpha - Return 1 if c is a letter. lowercase or uppercase
  *
- * Description: _isaplha checks whether characters are letters either in lower or uppercase
- *
- * Return: 1 if c is true else 0
+ *@c: The int to print
+ * Return: Always 0.
  */
 
-int _isalpha (int c)
-{ 
-	if (c >=97 && c <=122 &&
-	    c >=65 && c >=90);
-	return (1)
-		return(0)
+int _isalpha(int c)
+
+{
+
+	if ((c > 'a' && c < 'z') || (c > 'A' && c < 'Z'))
+	{
+		return (1);
+	}
+
+	else
+	{
+		return (0);
+	}
+
 }
